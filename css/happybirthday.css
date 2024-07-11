@@ -1,0 +1,130 @@
+
+body {
+    margin: 0;
+    background: #020202;
+  }
+  
+  canvas {
+    display: block
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+  
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    font-weight: 800;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 6s infinite;
+  }
+  
+  
+  
+  @-webkit-keyframes blink {
+  
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+      text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  @keyframes blink {
+  
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+      text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
+  }
+  
+  .disappear {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+    font-weight: 800;
+    -webkit-user-select: none;
+    user-select: none;
+  
+  }
+  
+  .disappear span {
+    display: inline-block;
+    color: transparent;
+    text-shadow: 0px 0px 0px #ffa500;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-size: 100px;
+    margin-right: 30px;
+  }
+  
+  .disappear span:nth-child(1) {
+    animation-name: disappearleft;
+  }
+  
+  .disappear span:nth-child(2) {
+    animation-name: disappearleft;
+    animation-delay: .3s;
+  }
+  
+  .disappear span:nth-child(3) {
+    animation-name: disappearight;
+    animation-delay: .6s;
+  }
+  
+  .disappear span:nth-child(4) {
+    animation-name: disappearleft;
+    animation-delay: .8s;
+  }
+  
+  @keyframes disappearleft {
+    50% {
+      transform: skew(50deg) translateY(-200%);
+      text-shadow: 0px 0px 50px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes disappearight {
+    50% {
+      transform: skew(-50deg) translateY(-200%);
+      text-shadow: 0px 0px 50px;
+      opacity: 0;
+    }
+  }
+  
