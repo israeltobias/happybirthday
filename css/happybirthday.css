@@ -130,4 +130,10 @@ body {
       opacity: 0;
     }
   }
+
+  .song {
+    position: absolute;
+    top:60%;
+    left: 30%;
+  }
   
